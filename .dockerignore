@@ -1,0 +1,11 @@
+**/node_modules
+**/dist
+**/.venv
+**/__pycache__
+**/*.pyc
+models
+training/data/raw
+training/data/processed
+.git
+frontend/node_modules
+backend/node_modules

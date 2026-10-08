@@ -1,0 +1,304 @@
+{
+  "macroF1": 0.7762140051790948,
+  "accuracy": 0.7766666666666666,
+  "latencyMs": 0.42310583987273276,
+  "perClass": {
+    "bug": {
+      "precision": 0.7956989247311828,
+      "recall": 0.74,
+      "f1": 0.7668393782383419,
+      "support": 100
+    },
+    "feature": {
+      "precision": 0.7924528301886793,
+      "recall": 0.84,
+      "f1": 0.8155339805825242,
+      "support": 100
+    },
+    "question": {
+      "precision": 0.7425742574257426,
+      "recall": 0.75,
+      "f1": 0.746268656716418,
+      "support": 100
+    }
+  },
+  "confusionMatrix": [
+    [
+      74,
+      9,
+      17
+    ],
+    [
+      7,
+      84,
+      9
+    ],
+    [
+      12,
+      13,
+      75
+    ]
+  ],
+  "split": "validation",
+  "perRepository": [
+    {
+      "repository": "bitcoin/bitcoin",
+      "split": "validation",
+      "macroF1": 0.7406330749354004,
+      "accuracy": 0.75,
+      "perClass": {
+        "bug": {
+          "precision": 0.8333333333333334,
+          "recall": 0.5,
+          "f1": 0.625,
+          "support": 20
+        },
+        "feature": {
+          "precision": 0.8695652173913043,
+          "recall": 1.0,
+          "f1": 0.9302325581395349,
+          "support": 20
+        },
+        "question": {
+          "precision": 0.6,
+          "recall": 0.75,
+          "f1": 0.6666666666666666,
+          "support": 20
+        }
+      },
+      "support": 60
+    },
+    {
+      "repository": "facebook/react",
+      "split": "validation",
+      "macroF1": 0.8675412254359623,
+      "accuracy": 0.8666666666666667,
+      "perClass": {
+        "bug": {
+          "precision": 1.0,
+          "recall": 0.9,
+          "f1": 0.9473684210526315,
+          "support": 20
+        },
+        "feature": {
+          "precision": 0.76,
+          "recall": 0.95,
+          "f1": 0.8444444444444444,
+          "support": 20
+        },
+        "question": {
+          "precision": 0.8823529411764706,
+          "recall": 0.75,
+          "f1": 0.8108108108108109,
+          "support": 20
+        }
+      },
+      "support": 60
+    },
+    {
+      "repository": "microsoft/vscode",
+      "split": "validation",
+      "macroF1": 0.6421652421652422,
+      "accuracy": 0.65,
+      "perClass": {
+        "bug": {
+          "precision": 0.625,
+          "recall": 0.5,
+          "f1": 0.5555555555555556,
+          "support": 20
+        },
+        "feature": {
+          "precision": 0.631578947368421,
+          "recall": 0.6,
+          "f1": 0.6153846153846154,
+          "support": 20
+        },
+        "question": {
+          "precision": 0.68,
+          "recall": 0.85,
+          "f1": 0.7555555555555555,
+          "support": 20
+        }
+      },
+      "support": 60
+    },
+    {
+      "repository": "opencv/opencv",
+      "split": "validation",
+      "macroF1": 0.7779297765617875,
+      "accuracy": 0.7833333333333333,
+      "perClass": {
+        "bug": {
+          "precision": 0.6956521739130435,
+          "recall": 0.8,
+          "f1": 0.7441860465116279,
+          "support": 20
+        },
+        "feature": {
+          "precision": 0.8260869565217391,
+          "recall": 0.95,
+          "f1": 0.8837209302325582,
+          "support": 20
+        },
+        "question": {
+          "precision": 0.8571428571428571,
+          "recall": 0.6,
+          "f1": 0.7058823529411765,
+          "support": 20
+        }
+      },
+      "support": 60
+    },
+    {
+      "repository": "tensorflow/tensorflow",
+      "split": "validation",
+      "macroF1": 0.8289562289562289,
+      "accuracy": 0.8333333333333334,
+      "perClass": {
+        "bug": {
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1": 0.9090909090909091,
+          "support": 20
+        },
+        "feature": {
+          "precision": 0.875,
+          "recall": 0.7,
+          "f1": 0.7777777777777778,
+          "support": 20
+        },
+        "question": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1": 0.8,
+          "support": 20
+        }
+      },
+      "support": 60
+    }
+  ],
+  "misclassified": [
+    {
+      "split": "validation",
+      "repository": "opencv/opencv",
+      "title": "OpenCV no longer builds with Cuda 12.0.1",
+      "trueLabel": "question",
+      "predictedLabel": "bug",
+      "confidence": 0.8208222271618603
+    },
+    {
+      "split": "validation",
+      "repository": "microsoft/vscode",
+      "title": "Turning off debug settings Focus Editor On Break, Focus Window On Break, or set the Open Debug to neverOpen,  doesn't work ",
+      "trueLabel": "feature",
+      "predictedLabel": "question",
+      "confidence": 0.8133791259086023
+    },
+    {
+      "split": "validation",
+      "repository": "bitcoin/bitcoin",
+      "title": "Q: cs_main protection for referencing m_blockman/g_chainman?",
+      "trueLabel": "question",
+      "predictedLabel": "feature",
+      "confidence": 0.7512776810851975
+    },
+    {
+      "split": "validation",
+      "repository": "tensorflow/tensorflow",
+      "title": "TensorFlow Lite Image Classification - add a new model",
+      "trueLabel": "feature",
+      "predictedLabel": "question",
+      "confidence": 0.7383834045884757
+    },
+    {
+      "split": "validation",
+      "repository": "microsoft/vscode",
+      "title": "Diff editor shows funny word alignments",
+      "trueLabel": "feature",
+      "predictedLabel": "bug",
+      "confidence": 0.7148545840344904
+    },
+    {
+      "split": "validation",
+      "repository": "facebook/react",
+      "title": "How do suspense and subscriptions interact?",
+      "trueLabel": "question",
+      "predictedLabel": "feature",
+      "confidence": 0.7128740143365928
+    },
+    {
+      "split": "validation",
+      "repository": "microsoft/vscode",
+      "title": "Diff Editor: Don't align just whitespace",
+      "trueLabel": "feature",
+      "predictedLabel": "bug",
+      "confidence": 0.7008322616495168
+    },
+    {
+      "split": "validation",
+      "repository": "microsoft/vscode",
+      "title": "Custom view container menu action contribute ",
+      "trueLabel": "question",
+      "predictedLabel": "feature",
+      "confidence": 0.6967286247489296
+    },
+    {
+      "split": "validation",
+      "repository": "tensorflow/tensorflow",
+      "title": "tf.image.combined_non_max_suppression crash with segmentation fault",
+      "trueLabel": "feature",
+      "predictedLabel": "bug",
+      "confidence": 0.6891159249858578
+    },
+    {
+      "split": "validation",
+      "repository": "microsoft/vscode",
+      "title": "[Accessibility] Cannot clear terminal buffer using shortcut key",
+      "trueLabel": "feature",
+      "predictedLabel": "bug",
+      "confidence": 0.6799594561525143
+    },
+    {
+      "split": "validation",
+      "repository": "facebook/react",
+      "title": "Access React component underlying DOM tree",
+      "trueLabel": "question",
+      "predictedLabel": "feature",
+      "confidence": 0.6647690866021492
+    },
+    {
+      "split": "validation",
+      "repository": "opencv/opencv",
+      "title": "Rotate Parameter for putText() function",
+      "trueLabel": "question",
+      "predictedLabel": "feature",
+      "confidence": 0.6532143530071522
+    }
+  ],
+  "C": 2.0,
+  "CSearch": [
+    {
+      "C": 0.25,
+      "macroF1": 0.7382426414684481
+    },
+    {
+      "C": 0.5,
+      "macroF1": 0.7448232614350722
+    },
+    {
+      "C": 1.0,
+      "macroF1": 0.7653633267220673
+    },
+    {
+      "C": 2.0,
+      "macroF1": 0.7762140051790948
+    },
+    {
+      "C": 4.0,
+      "macroF1": 0.7662490717795967
+    }
+  ],
+  "version": "baseline-tfidf-lr-v1",
+  "inputMode": "title_body",
+  "maxLength": null
+}

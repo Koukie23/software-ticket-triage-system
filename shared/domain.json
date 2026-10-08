@@ -1,0 +1,19 @@
+{
+  "labels": ["bug", "feature", "question"],
+  "repositories": [
+    "facebook/react",
+    "tensorflow/tensorflow",
+    "microsoft/vscode",
+    "bitcoin/bitcoin",
+    "opencv/opencv"
+  ],
+  "queues": {
+    "bug": "Defect",
+    "feature": "Feature request",
+    "question": "Technical support",
+    "review": "Human review"
+  },
+  "processStatuses": ["pending", "in_progress", "resolved"],
+  "classificationStatuses": ["pending", "classified", "failed"],
+  "reviewStatuses": ["auto", "pending", "confirmed"]
+}

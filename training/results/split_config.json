@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "valFraction": 0.2,
+  "stratify": "Repository+Label",
+  "counts": {
+    "officialTrain": 1500,
+    "train": 1200,
+    "validation": 300,
+    "test": 1500
+  }
+}

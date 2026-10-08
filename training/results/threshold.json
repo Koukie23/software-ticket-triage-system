@@ -1,0 +1,99 @@
+{
+  "threshold": 0.7,
+  "modelVersion": "baseline-tfidf-lr-v1",
+  "rule": "在验证集上选取自动分流准确率不低于 0.90 的最低阈值。等于该阈值的工单自动分流，低于该阈值进入人工复核。",
+  "sweep": [
+    {
+      "threshold": 0.4,
+      "coverage": 0.9633333333333334,
+      "reviewRate": 0.036666666666666625,
+      "autoAccuracy": 0.7785467128027682,
+      "autoCount": 289
+    },
+    {
+      "threshold": 0.45,
+      "coverage": 0.8866666666666667,
+      "reviewRate": 0.11333333333333329,
+      "autoAccuracy": 0.8007518796992481,
+      "autoCount": 266
+    },
+    {
+      "threshold": 0.5,
+      "coverage": 0.7333333333333333,
+      "reviewRate": 0.2666666666666667,
+      "autoAccuracy": 0.8181818181818182,
+      "autoCount": 220
+    },
+    {
+      "threshold": 0.55,
+      "coverage": 0.5933333333333334,
+      "reviewRate": 0.4066666666666666,
+      "autoAccuracy": 0.848314606741573,
+      "autoCount": 178
+    },
+    {
+      "threshold": 0.6,
+      "coverage": 0.5,
+      "reviewRate": 0.5,
+      "autoAccuracy": 0.8666666666666667,
+      "autoCount": 150
+    },
+    {
+      "threshold": 0.65,
+      "coverage": 0.4033333333333333,
+      "reviewRate": 0.5966666666666667,
+      "autoAccuracy": 0.8925619834710744,
+      "autoCount": 121
+    },
+    {
+      "threshold": 0.7,
+      "coverage": 0.29,
+      "reviewRate": 0.71,
+      "autoAccuracy": 0.9195402298850575,
+      "autoCount": 87
+    },
+    {
+      "threshold": 0.75,
+      "coverage": 0.21666666666666667,
+      "reviewRate": 0.7833333333333333,
+      "autoAccuracy": 0.9538461538461539,
+      "autoCount": 65
+    },
+    {
+      "threshold": 0.8,
+      "coverage": 0.15666666666666668,
+      "reviewRate": 0.8433333333333333,
+      "autoAccuracy": 0.9574468085106383,
+      "autoCount": 47
+    },
+    {
+      "threshold": 0.85,
+      "coverage": 0.10666666666666667,
+      "reviewRate": 0.8933333333333333,
+      "autoAccuracy": 1.0,
+      "autoCount": 32
+    },
+    {
+      "threshold": 0.9,
+      "coverage": 0.06666666666666667,
+      "reviewRate": 0.9333333333333333,
+      "autoAccuracy": 1.0,
+      "autoCount": 20
+    },
+    {
+      "threshold": 0.95,
+      "coverage": 0.016666666666666666,
+      "reviewRate": 0.9833333333333333,
+      "autoAccuracy": 1.0,
+      "autoCount": 5
+    }
+  ],
+  "chosen": {
+    "threshold": 0.7,
+    "coverage": 0.29,
+    "reviewRate": 0.71,
+    "autoAccuracy": 0.9195402298850575,
+    "autoCount": 87
+  },
+  "provisional": true
+}

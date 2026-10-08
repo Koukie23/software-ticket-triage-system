@@ -1,0 +1,130 @@
+{
+  "source": "https://github.com/nlbse2024/issue-report-classification",
+  "fields": [
+    "repo",
+    "created_at",
+    "label",
+    "title",
+    "body"
+  ],
+  "modelFields": [
+    "Repository",
+    "Title",
+    "Body"
+  ],
+  "unusedFields": [
+    "CreatedAt"
+  ],
+  "seed": 42,
+  "valFraction": 0.2,
+  "stratify": "Repository+Label",
+  "counts": {
+    "officialTrain": 1500,
+    "train": 1200,
+    "validation": 300,
+    "test": 1500
+  },
+  "nulBytesRemoved": {
+    "officialTrain": 0,
+    "test": 1
+  },
+  "missing": {
+    "officialTrain": {
+      "Title": 0,
+      "Body": 0
+    },
+    "test": {
+      "Title": 0,
+      "Body": 2
+    }
+  },
+  "duplicates": {
+    "withinOfficialTrain": 1,
+    "withinTest": 0,
+    "officialTrainTestOverlap": 3,
+    "trainValidationOverlap": 0,
+    "trainTestOverlap": 2
+  },
+  "byLabel": [
+    {
+      "split": "officialTrain",
+      "bug": 500,
+      "feature": 500,
+      "question": 500
+    },
+    {
+      "split": "train",
+      "bug": 400,
+      "feature": 400,
+      "question": 400
+    },
+    {
+      "split": "validation",
+      "bug": 100,
+      "feature": 100,
+      "question": 100
+    },
+    {
+      "split": "test",
+      "bug": 500,
+      "feature": 500,
+      "question": 500
+    }
+  ],
+  "byRepository": [
+    {
+      "repository": "facebook/react",
+      "officialTrain": 300,
+      "train": 240,
+      "validation": 60,
+      "test": 300
+    },
+    {
+      "repository": "tensorflow/tensorflow",
+      "officialTrain": 300,
+      "train": 240,
+      "validation": 60,
+      "test": 300
+    },
+    {
+      "repository": "microsoft/vscode",
+      "officialTrain": 300,
+      "train": 240,
+      "validation": 60,
+      "test": 300
+    },
+    {
+      "repository": "bitcoin/bitcoin",
+      "officialTrain": 300,
+      "train": 240,
+      "validation": 60,
+      "test": 300
+    },
+    {
+      "repository": "opencv/opencv",
+      "officialTrain": 300,
+      "train": 240,
+      "validation": 60,
+      "test": 300
+    }
+  ],
+  "length": {
+    "title": {
+      "mean": 55.946,
+      "median": 52.0,
+      "p95": 106.0,
+      "max": 293
+    },
+    "body": {
+      "mean": 2335.702,
+      "median": 1091.0,
+      "p95": 5763.9,
+      "max": 207777
+    }
+  },
+  "notes": [
+    "created_at 不作为模型输入。",
+    "测试集不参与训练、调参和阈值选择。",
+    "五个仓库合并训练一个通用分类器，并分别报告各仓库效果。"
+  ]
+}

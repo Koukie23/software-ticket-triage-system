@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+models/
+training/data/raw/*
+training/data/processed/*
+!training/data/raw/.gitkeep
+frontend/dist/
+backend/dist/
+*.tsbuildinfo
+.idea/
+.vscode/

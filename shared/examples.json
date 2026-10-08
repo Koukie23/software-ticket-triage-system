@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Bug example",
+    "project": "facebook/react",
+    "title": "useEffect cleanup updates state after unmount",
+    "body": "When a component unmounts while a request is in flight, the effect cleanup does not cancel the previous subscription. setState then runs after unmount. This happens on React 18 in Strict Mode. Expected: cleanup cancels the request and no state update is applied. Actual: React warns about a memory leak and the last screen shows stale data."
+  },
+  {
+    "name": "Feature example",
+    "project": "microsoft/vscode",
+    "title": "Add a command to copy the relative path of the active editor",
+    "body": "Please add a command and keybinding that copies the workspace-relative path of the active editor. Today I can copy the absolute path, but review comments usually need the relative path. A command named workbench.files.action.copyRelativeFilePath would match the existing copy path actions."
+  },
+  {
+    "name": "Question example",
+    "project": "tensorflow/tensorflow",
+    "title": "How do I pin one GPU and enable memory growth?",
+    "body": "I am running TensorFlow on a shared machine and want one process to use only GPU 1 with memory growth enabled. Which environment variables and tf.config calls should I use, and do they need to run before the first allocation? I am not reporting a crash, I only need the recommended setup."
+  }
+]
